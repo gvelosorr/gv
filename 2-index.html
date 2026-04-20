@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Sports Oficial - Catálogo</title>
+    <style>
+        /* Cores da Identidade GV Sports */
+        :root {
+            --preto: #000000;
+            --rosa-insta: #E1306C;
+            --cinza-fundo: #f4f4f4;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--cinza-fundo);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Topo do Site */
+        header {
+            background-color: var(--preto);
+            color: var(--branco);
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* Estilo do seu Logo */
+        .logo {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid var(--rosa-insta);
+            margin-bottom: 15px;
+            background-color: var(--branco);
+            transition: 0.3s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1); /* Dá um zoom quando passa o mouse */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-weight: 300;
+            opacity: 0.8;
+        }
+
+        /* Grade de Produtos */
+        #produtos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Cartão de Produto */
+        article {
+            background: var(--branco);
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+        }
+
+        article img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        article h2 {
+            font-size: 1.2rem;
+            color: #222;
+        }
+
+        /* Botão Instagram */
+        .btn-insta {
+            background-color: var(--rosa-insta);
+            color: var(--branco);
+            border: none;
+            padding: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn-insta:hover {
+            background-color: #C13584;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagens/logo.jpg" alt="Logo GV Sports" class="logo">
+        <h1>GV Sports Oficial</h1>
+        <p>Sneakers & Shirts - O melhor do Sportswear</p>
+    </header>
+
+    <main id="produtos">
+        <article>
+            <img src="imagens/tn.avif" alt="Nike TN">
+            <h2>Nike Air Max Plus</h2>
+            <p><strong>R$ 899,00</strong></p>
+            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
+                <button class="btn-insta">Chamar no Instagram</button>
+            </a>
+        </article>
+
+        <article>
+            <img src="imagens/br.webp" alt="Camisa de Time">
+            <h2>Camisa Premium</h2>
+            <p><strong>R$ 180,00</strong></p>
+            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
+                <button class="btn-insta">Chamar no Instagram</button>
+            </a>
+        </article>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Sports Oficial - Catálogo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        #produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+        article {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        h2 { font-size: 1.2rem; margin-bottom: 10px; }
+        .preco { font-weight: bold; color: #27ae60; font-size: 1.1rem; }
+        
+        button {
+            background-color: #25d366; /* Cor oficial do WhatsApp */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 15px;
+        }
+        button:hover { background-color: #128c7e; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GV Sports Oficial</h1>
+        <p>Os melhores Sneakers e Sportswear</p>
+    </header>
+
+    <section id="produtos">
+        <article>
+            <h2>Nike Air Max Plus</h2>
+            <p class="preco">R$ 899,00</p>
+            <button onclick="window.location.href='https://wa.me/SEUNUMERO'">Comprar via WhatsApp</button>
+        </article>
+        
+        <article>
+            <h2>Camisa de Time Premium</h2>
+            <p class="preco">R$ 180,00</p>
+            <button onclick="window.location.href='https://wa.me/SEUNUMERO'">Comprar via WhatsApp</button>
+        </article>
+    </section>
+
+</body>
+</html>

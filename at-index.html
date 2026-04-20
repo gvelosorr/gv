@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GV Sports Oficial - Catálogo</title>
+    
+    <style>
+        :root {
+            --primary-color: #000;
+            --accent-color: #E1306C;
+            --price-color: #27ae60;
+            --bg-color: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        #produtos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 10px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        article {
+            background: white;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        img {
+            border-radius: 15px;
+            margin-bottom: 15px;
+            object-fit: cover;
+            background-color: #fdfdfd;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            height: 50px; /* Mantém o alinhamento se o nome for longo */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .preco {
+            font-size: 1.5rem;
+            color: var(--price-color);
+            margin: 15px 0;
+            display: block;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1rem;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #C13584;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 20px;
+            background: #eee;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GV SPORTS OFICIAL</h1>
+        <p>Os melhores Sneakers e Sportswear para o seu estilo</p>
+    </header>
+
+    <section id="produtos">
+        <article>
+            <h2>Nike Air Max Plus</h2>
+            <img src="imagens/nike-tn.jpg" alt="Nike TN" width="240" height="240">
+            <span class="preco">R$ 899,00</span>
+            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
+                <button>Comprar no Instagram</button>
+            </a>
+        </article>
+        
+        <article>
+            <h2>Camisa de Time Premium</h2>
+            <img src="imagens/camisa.jpg" alt="Camisa de Time" width="240" height="240">
+            <span class="preco">R$ 180,00</span>
+            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
+                <button>Comprar no Instagram</button>
+            </a>
+        </article>
+    </section>
+
+    <footer>
+        &copy; 2026 GV Sports Oficial - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
