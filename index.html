@@ -3,147 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GV Sports Oficial - Catálogo</title>
-    <style>
-        /* Cores da Identidade GV Sports */
-        :root {
-            --preto: #000000;
-            --rosa-insta: #E1306C;
-            --cinza-fundo: #f4f4f4;
-            --branco: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--cinza-fundo);
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Topo do Site */
-        header {
-            background-color: var(--preto);
-            color: var(--branco);
-            padding: 40px 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-
-        /* Estilo do seu Logo */
-        .logo {
-            width: 150px;
-            height: auto;
-            border-radius: 50%;
-            border: 4px solid var(--rosa-insta);
-            margin-bottom: 15px;
-            background-color: var(--branco);
-            transition: 0.3s;
-        }
-
-        .logo:hover {
-            transform: scale(1.1); /* Dá um zoom quando passa o mouse */
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            text-transform: uppercase;
-        }
-
-        header p {
-            font-weight: 300;
-            opacity: 0.8;
-        }
-
-        /* Grade de Produtos */
-        #produtos {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 40px 10px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Cartão de Produto */
-        article {
-            background: var(--branco);
-            margin: 15px;
-            padding: 20px;
-            width: 280px;
-            border-radius: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-
-        article:hover {
-            transform: translateY(-10px);
-        }
-
-        article img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 15px;
-            margin-bottom: 15px;
-        }
-
-        article h2 {
-            font-size: 1.2rem;
-            color: #222;
-        }
-
-        /* Botão Instagram */
-        .btn-insta {
-            background-color: var(--rosa-insta);
-            color: var(--branco);
-            border: none;
-            padding: 12px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: bold;
-            width: 100%;
-            display: block;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .btn-insta:hover {
-            background-color: #C13584;
-        }
-
-        a {
-            text-decoration: none;
-        }
-    </style>
+    <title>GV Sports Oficial</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <img src="imagens/logo.jpg" alt="Logo GV Sports" class="logo">
-        <h1>GV Sports Oficial</h1>
-        <p>Sneakers & Shirts - O melhor do Sportswear</p>
+        <div class="logo-area">
+            <img src="imagens/logo.png" alt="GV Logo" class="logo-gv">
+        </div>
+        <div class="header-icons">
+            <span class="icon">🔍</span> <span class="icon">👤</span> <span class="icon">🛍️</span> <span class="icon">☰</span> </div>
     </header>
 
-    <main id="produtos">
-        <article>
-            <img src="imagens/tn.avif" alt="Nike TN">
-            <h2>Nike Air Max Plus</h2>
-            <p><strong>R$ 899,00</strong></p>
-            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
-                <button class="btn-insta">Chamar no Instagram</button>
-            </a>
-        </article>
+    <section class="hero-banner">
+        <img src="imagens/destaque.jpg" alt="Seleção Brasileira Destaque">
+        <div class="hero-text">
+            <h1>JOGA SINISTRO</h1>
+            <div class="hero-btns">
+                <button class="btn-nike">Comprar</button>
+                <button class="btn-nike">Saiba Mais</button>
+            </div>
+        </div>
+    </section>
 
-        <article>
-            <img src="imagens/br.webp" alt="Camisa de Time">
-            <h2>Camisa Premium</h2>
-            <p><strong>R$ 180,00</strong></p>
-            <a href="https://ig.me/m/gvsports_oficial" target="_blank">
-                <button class="btn-insta">Chamar no Instagram</button>
-            </a>
-        </article>
-    </main>
+    <div style="padding: 40px 40px 0; font-size: 24px; font-weight: 700;">Lançamentos de Elite</div>
+    <section class="product-grid">
+        
+        <a href="https://ig.me/m/gvsports_oficial" target="_blank" class="product-card">
+            <div class="product-img-wrapper">
+                <img src="imagens/nike-tn.jpg" alt="Nike TN">
+            </div>
+            <div class="product-info">
+                <h3>Nike Air Max Plus "TN"</h3>
+                <p>Hypewear & Sneakers</p>
+                <div class="preco">R$ 1.200,00</div>
+            </div>
+        </a>
+
+        <a href="https://ig.me/m/gvsports_oficial" target="_blank" class="product-card">
+            <div class="product-img-wrapper">
+                <img src="imagens/camisa-brasil.jpg" alt="Camisa Brasil">
+            </div>
+            <div class="product-info">
+                <h3>Camisa Brasil Oficial</h3>
+                <p>Copa América 2026</p>
+                <div class="preco">R$ 179,90</div>
+            </div>
+        </a>
+
+        </section>
+
+    <footer>
+        <div class="footer-section">
+            <div class="footer-title">Formas de Pagamento</div>
+            <div class="payment-methods">
+                <div class="payment-card">MASTER</div>
+                <div class="payment-card">VISA</div>
+                <div class="payment-card">AMEX</div>
+                <div class="payment-card">ELO</div>
+                <div class="payment-card">PIX</div>
+            </div>
+        </div>
+
+        <div class="footer-section footer-links">
+            <a href="#">Política de privacidade</a>
+            <a href="#">Política de cookies</a>
+            <a href="#">Termos de uso</a>
+        </div>
+
+        <div style="color: #707072; font-size: 12px; margin-top: 40px;">
+            © 2026 GV Sports. Baseado no design da Nike.
+        </div>
+    </footer>
 
 </body>
 </html>
+   
