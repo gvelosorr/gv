@@ -1,0 +1,172 @@
+/* style.css - Padrão Nike Copycat */
+:root {
+    --preto-nike: #111111;
+    --cinza-nike: #f5f5f5;
+    --cinza-texto: #757575;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Usaremos essa fonte robusta */
+    margin: 0;
+    background-color: var(--branco);
+    color: var(--preto-nike);
+    -webkit-font-smoothing: antialiased;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* --- 1. Header Minimalista --- */
+header {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    border-bottom: 1px solid var(--cinza-nike);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-gv {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--preto-nike);
+}
+
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/* Ícones simplificados em texto para agora (depois você troca por SVGs) */
+.icon { cursor: pointer; }
+
+/* --- 2. Banner de Impacto (Herói) --- */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Ocupa quase a tela toda */
+    background-color: var(--preto-nike);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6; /* Escurece a foto para o texto aparecer */
+    position: absolute;
+}
+
+.hero-text {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    letter-spacing: -2px;
+}
+
+.hero-btns { display: flex; gap: 15px; justify-content: center; }
+
+.btn-nike {
+    background-color: var(--branco);
+    color: var(--preto-nike);
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-nike:hover { background-color: var(--cinza-nike); }
+
+/* --- 3. Grade de Produtos --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+    padding: 60px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: var(--branco);
+}
+
+.product-img-wrapper {
+    background-color: var(--cinza-nike);
+    aspect-ratio: 1/1; /* Garante fotos quadradas */
+    overflow: hidden;
+}
+
+.product-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+    transform: scale(1.03); /* Zoom leve da Nike */
+}
+
+.product-info { padding: 15px 0; }
+.product-info h3 { font-size: 16px; margin: 0; font-weight: 600; }
+.product-info p { color: var(--cinza-texto); margin: 5px 0 10px; font-size: 16px; }
+.preco { font-weight: 600; font-size: 16px; }
+
+/* --- 4. Footer (Cópia do Print_1) --- */
+footer {
+    background-color: var(--branco);
+    padding: 60px 40px;
+    border-top: 1px solid var(--cinza-nike);
+    color: #111;
+}
+
+.footer-section { margin-bottom: 30px; }
+.footer-title { font-weight: 600; text-transform: uppercase; font-size: 16px; }
+.footer-links { margin-top: 15px; }
+.footer-links a { display: block; padding: 5px 0; color: #707072; }
+
+.payment-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.payment-card {
+    width: 60px;
+    height: 38px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header { padding: 15px 20px; }
+    .hero-text h1 { font-size: 32px; }
+    .product-grid { padding: 30px 20px; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+}
